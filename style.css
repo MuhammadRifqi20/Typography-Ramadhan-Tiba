@@ -1,0 +1,328 @@
+@font-face {
+	font-family: "Ramadhan";
+	src: url('Fonts/Sketsa Ramadhan Alternates.ttf') format('truetype'); 
+}
+
+@font-face {
+	font-family: "awal";
+	src: url('Fonts/aAwalRamadhan.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "kareem";
+	src: url('Fonts/Ramadhan Kareem.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "marhaban";
+	src: url('Fonts/Ramadhan Karim.ttf') format('truetype');
+}
+
+body {
+	background-image: url(Picture/5a2b3b37-709d-4974-b937-abdd4d161606.jfif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.image img {
+	width: 350px;
+	height: 350px;
+	position: absolute;
+	top: -300px;
+	animation: img 2s forwards;
+}
+
+.image1 img {
+	width: 550px;
+	height: 550px;
+	position: absolute;
+	top: -350px;
+	right: -50px;
+	animation: img1 2s forwards;
+}
+
+.image2 img {
+	width: 700px;
+	height: 300px;
+	position: absolute;
+	top: -220px;
+	right: 430px;
+	animation: img2 2s forwards;
+}
+
+.container {
+	width: 800px;
+	height: 600px;
+	margin: 60px auto;	
+	overflow: hidden;
+}
+
+.Nama {
+	text-align: center;
+	font-family: "Ramadhan";
+	position: absolute;
+	top: 300px;
+	left: 630px;
+	transform: scale(1);
+	opacity: 1;
+	transition: 2s 3s;
+}
+
+.Nama {
+	transform: scale(0);
+	opacity: 0;
+}
+
+.ramadhan {
+	text-align: center;
+	font-size: 30px;
+	padding-top: 50px;
+	transform: scale(0);
+	opacity: 0;
+	animation: ramadhan 1s 4s forwards;
+}
+
+.ramadhan2 {
+	line-height: 5px;
+	/*padding-top: 40px;*/
+	padding-left: 10px;
+	font-size: 20px;
+	float: left;
+}
+
+.ramadhan2 h1 {
+	font-size: 55px;
+	padding-top: 30px;
+	position: relative;
+	left: -250px;
+	animation: ramadhan2 1s 5.5s cubic-bezier(.51,.33,.09,1.51) forwards;
+}
+
+.ramadhan2 h2 {
+	font-size: 45px;
+	padding-left: 75px;
+	padding-top: 5px;
+	position: relative;
+	top: -40px;
+	opacity: 0;
+	animation: ramadhan2_2 1s 6s cubic-bezier(.51,.33,.09,1.51) forwards;
+}
+
+.ramadhan3 {
+	line-height: 5px;
+	padding-right: 10px;
+	font-size: 20px;
+	float: right;
+}
+
+.ramadhan3 h1 {
+	font-size: 55px;
+	padding-top: 30px;
+	position: relative;
+	left: 250px;
+	animation: ramadhan3 1s 7s cubic-bezier(.51,.33,.09,1.51) forwards;
+}
+
+.ramadhan3 h2 {
+	font-size: 45px;
+	padding-left: 75px;
+	padding-top: 5px;
+	position: relative;
+	top: -40px;
+	opacity: 0;
+	animation: ramadhan3_2 1s 7.5s cubic-bezier(.51,.33,.09,1.51) forwards;
+}
+
+.marhaban {
+	padding-top: 255px;
+	font-family: "kareem";
+	font-size: 30px; 
+	line-height: 10px;
+	padding-left: 350px;
+	transform: scale(0);
+	opacity: 0;
+	animation: marhaban 2.5s 9s cubic-bezier(.36,.35,.63,1.6) forwards;
+}
+
+.marhaban2 {
+	position: absolute;
+	top: 400px;
+	font-family: "kareem";
+	font-size: 20px;
+	line-height: 10px;
+	padding-top: 175px;
+	padding-left: 395px;
+	transform: rotate(-30deg);
+	opacity: 0;
+	animation: marhaban2 3s 11s forwards;
+}
+
+.marhaban3 {
+	line-height: 10px;
+	font-family: "marhaban";
+	font-size: 20px;
+	position: absolute;
+	bottom: 255px;
+	left: 645px;
+	transform: rotate(20deg);
+	opacity: 0;
+	animation: marhaban3 1s 14.5s forwards;
+}
+
+.marhaban4 {
+	line-height: 10px;
+	font-family: "marhaban";
+	font-size: 20px;
+	position: absolute;
+	bottom: 255px;
+	left: 645px;
+	transform: rotate(20deg);
+	opacity: 0;
+	animation: marhaban4 1s 17.3s forwards;
+}
+
+.ramadhan, .ramadhan2, .ramadhan3 {
+	font-family: "awal";
+}
+
+/*Animasi*/
+@keyframes ramadhan {
+	form {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes ramadhan2 {
+	form {
+		left: -250px;
+	}
+	to {
+		left: 0;
+	}
+}
+
+@keyframes ramadhan2_2 {
+	form {
+		top: -40px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes ramadhan3 {
+	form {
+		left: -250px;
+	}
+	to {
+		left: 0;
+	}
+}
+
+@keyframes ramadhan3_2 {
+	form {
+		top: -40px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes marhaban {
+	from {
+		transform: scale(0) rotate(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1) rotate(-30deg);
+		opacity: 1;
+	}
+}
+
+@keyframes marhaban2 {
+	0% {
+		padding-top: 175px;
+		padding-left: 395px;
+		opacity: 0;
+	}
+	50% {
+		padding-top: 40px;
+		padding-left: 250px;
+		transform: rotate(-30deg);
+		opacity: 1;
+	}
+	100% {
+		top: 350px;
+		padding-top: 0px;
+		padding-left: 280px;
+		transform: rotate(20deg);
+		opacity: 1;
+	}
+}
+
+@keyframes marhaban3 {
+	from {
+	bottom: 255px;
+	left: 645px;
+	opacity: 0;
+	}
+	to {
+	left: 500px;
+	bottom: 150px;
+	opacity: 1;
+	}
+}
+
+@keyframes marhaban4 {
+	from {
+	bottom: 255px;
+	left: 645px;
+	opacity: 0;
+	}
+	to {
+	left: 700px;
+	bottom: 400px;
+	opacity: 1;
+	}
+}
+
+@keyframes img {
+	from {
+		top: -300px;
+	}
+	to {
+		top: -60px;
+	}
+}
+
+@keyframes img1 {
+	from {
+		top: -350px;
+	}
+	to {
+		top: -100px;
+	}
+}
+
+@keyframes img2 {
+	from {
+		top: -220px;
+	}
+	to {
+		top: -70px;
+	}
+}
+
+/*Clear*/
+.cp {
+	clear: both;
+}
